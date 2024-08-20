@@ -19,45 +19,36 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-    /* responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 
 }
-
 .grid__full-width {
     width: 100%;
 }
-
 .grid__row {
     display:flex;
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
 }
-
-/* Test */
 .grid__column-2 {
     padding-left: -5px;
     padding-right: -5px;
     width: 16.6667%;
 }
-
 .grid__column-2-4 {
     padding-left: 5px;
     padding-right: 5px;
     width: 20%;
 }
-
 .grid__column-10 {
     padding-left: 5px;
     padding-right: 5px;
     width: 83.3334%;
 }
-
-/* Animation*/
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -66,7 +57,6 @@ html {
         opacity: 1;
     }
 }
-
 @keyframes growth {
     from {
         transform: scale(var(--growth-form));
@@ -75,8 +65,6 @@ html {
         transform: scale(var(--growth-to));
     }
 }
-
-/* modal*/
 .modal {
     position: fixed;
     top: 0;
@@ -86,14 +74,12 @@ html {
     display: flex;
     animation: fadeIn linear 0.1s;
 }
-
 .modal__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);   
 }
-
 .modal__body {
     --growth-from: 0.7;
     --growth-to: 1;
@@ -102,8 +88,6 @@ html {
     z-index: 1;
     animation: growth linear 0.1s ;
 }
-
-/* Button style */
 .btn {
     min-width: 124px;
     height: 34px;
@@ -120,17 +104,14 @@ html {
     justify-content: center;
     line-height: 1.6rem;
 }
-
 .btn.btn--normal:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
-
 .btn.btn--size-s {
     height: 32px;
     font-size: 12px;
     padding: 0 8px;
 }
-
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -140,9 +121,6 @@ html {
     cursor: default;
     background-color: #999;
 }
-
-/* Selection */
-
 .select-input {
     position: relative;
     min-width: 200px;
@@ -153,19 +131,16 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .select-input__label {
     font-size: 1.4rem;
 }
-
 .select-input__icon {
     font-size: 1.4rem;
     color: rgb(131, 131, 131);
     position: relative;
     top: 1px;
 }
-
 .select-input:hover .select-input__list {
     display: block;
 }
@@ -180,7 +155,6 @@ html {
     list-style: none;
     display: none;
 }
-
 .select-input__link {
     font-size: 1.4rem;
     color: var(--text-color);
@@ -188,8 +162,6 @@ html {
     display: block;
     padding: 4px 0;
 }
- 
 .select-input__link:hover {
     color: var(--primary-color);
-
 }
